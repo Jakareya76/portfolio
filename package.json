@@ -1,8 +1,8 @@
 {
   "name": "portfolio",
+  "homepage": "https://jakareya76.github.io/portfolio",
   "version": "2.0",
   "private": true,
-  "homepage": "https://jakareya76.github.io/portfolio",
   "dependencies": {
     "@emailjs/browser": "^3.5.0",
     "@testing-library/jest-dom": "^5.16.3",
