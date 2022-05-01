@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  color: #fff;
+  background: #6665ee;
+}
+
+.cubespinner {
+  -webkit-animation-duration: 12s;
+  animation-duration: 12s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: spincube;
+  animation-name: spincube;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  margin-left: calc(50% - 100px);
+  -webkit-transform-origin: 100px 100px 0;
+  transform-origin: 100px 100px 0;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.cubespinner div {
+  align-items: center;
+  background: #242b2e;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 20px 0 #ffffe096;
+  display: flex;
+  font-size: 150px;
+  height: 300px;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  width: 300px;
+}
+.cubespinner .face1 {
+  color: #dd0031;
+  -webkit-transform: translateZ(150px);
+  transform: translateZ(150px);
+}
+.cubespinner .face2 {
+  color: #f06529;
+  -webkit-transform: rotateY(90deg) translateZ(150px);
+  transform: rotateY(90deg) translateZ(150px);
+}
+.cubespinner .face3 {
+  color: #28a4d9;
+  -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(150px);
+  transform: rotateY(90deg) rotateX(90deg) translateZ(150px);
+}
+.cubespinner .face4 {
+  color: #5ed4f4;
+  -webkit-transform: rotateY(180deg) rotate(90deg) translateZ(150px);
+  transform: rotateY(180deg) rotate(90deg) translateZ(150px);
+}
+.cubespinner .face5 {
+  color: #efd81d;
+  -webkit-transform: rotateY(-90deg) rotate(90deg) translateZ(150px);
+  transform: rotateY(-90deg) rotate(90deg) translateZ(150px);
+}
+.cubespinner .face6 {
+  color: #ec4d28;
+  -webkit-transform: rotateX(-90deg) translateZ(150px);
+  transform: rotateX(-90deg) translateZ(150px);
+}
+@-webkit-keyframes spincube {
+  0%,
+  to {
+    -webkit-transform: rotateX(0deg) rotateY(0deg) rotate(0deg);
+    transform: rotateX(0deg) rotateY(0deg) rotate(0deg);
+  }
+  16% {
+    -webkit-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+  }
+  33% {
+    -webkit-transform: rotateY(-90deg) rotate(90deg);
+    transform: rotateY(-90deg) rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotateY(-180deg) rotate(90deg);
+    transform: rotateY(-180deg) rotate(90deg);
+  }
+  66% {
+    -webkit-transform: rotateY(-270deg) rotateX(90deg);
+    transform: rotateY(-270deg) rotateX(90deg);
+  }
+  83% {
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+  }
+}
+@keyframes spincube {
+  0%,
+  to {
+    -webkit-transform: rotateX(0deg) rotateY(0deg) rotate(0deg);
+    transform: rotateX(0deg) rotateY(0deg) rotate(0deg);
+  }
+  16% {
+    -webkit-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+  }
+  33% {
+    -webkit-transform: rotateY(-90deg) rotate(90deg);
+    transform: rotateY(-90deg) rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotateY(-180deg) rotate(90deg);
+    transform: rotateY(-180deg) rotate(90deg);
+  }
+  66% {
+    -webkit-transform: rotateY(-270deg) rotateX(90deg);
+    transform: rotateY(-270deg) rotateX(90deg);
+  }
+  83% {
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+  }
+}
+@media (max-width: 1024px) {
+  .cubespinner {
+    -webkit-animation-duration: 12s;
+    animation-duration: 12s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: spincube;
+    animation-name: spincube;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    margin-left: calc(50% - 100px);
+    -webkit-transform-origin: 100px 100px 0;
+    transform-origin: 100px 100px 0;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  .cubespinner div {
+    align-items: center;
+    background: #242b2e;
+    border: 5px solid #ccc;
+    box-shadow: 0 0 20px 0 #ffffe0;
+    display: flex;
+    font-size: 150px;
+    height: 200px;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    width: 200px;
+  }
+  .cubespinner .face1 {
+    color: #dd0031;
+    -webkit-transform: translateZ(100px);
+    transform: translateZ(100px);
+  }
+  .cubespinner .face2 {
+    color: #f06529;
+    -webkit-transform: rotateY(90deg) translateZ(100px);
+    transform: rotateY(90deg) translateZ(100px);
+  }
+  .cubespinner .face3 {
+    color: #28a4d9;
+    -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+    transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+  }
+  .cubespinner .face4 {
+    color: #5ed4f4;
+    -webkit-transform: rotateY(180deg) rotate(90deg) translateZ(100px);
+    transform: rotateY(180deg) rotate(90deg) translateZ(100px);
+  }
+  .cubespinner .face5 {
+    color: #efd81d;
+    -webkit-transform: rotateY(-90deg) rotate(90deg) translateZ(100px);
+    transform: rotateY(-90deg) rotate(90deg) translateZ(100px);
+  }
+  .cubespinner .face6 {
+    color: #ec4d28;
+    -webkit-transform: rotateX(-90deg) translateZ(100px);
+    transform: rotateX(-90deg) translateZ(100px);
+  }
+}
+@media (max-height: 640px) {
+  .cubespinner {
+    margin-top: 100px;
+  }
+}
+
+.skill-bars {
+  padding: 25px 30px;
+  width: 400px;
+  background-color: rgb(24 24 27);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 999999999999999999999;
+}
+.skill-bars .bar {
+  margin: 20px 0;
+}
+.skill-bars .bar:first-child {
+  margin-top: 0px;
+}
+.skill-bars .bar .info {
+  margin-bottom: 5px;
+}
+.skill-bars .bar .info span {
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+  color:#fff;
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+.skill-bars .bar .progress-line {
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+    0 1px rgba(255, 255, 255, 0.8);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span {
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #6665ee;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.bar .progress-line.html span {
+  width: 90%;
+}
+.bar .progress-line.css span {
+  width: 80%;
+}
+.bar .progress-line.javascript span {
+  width: 90%;
+}
+.bar .progress-line.reactjs span {
+  width: 85%;
+}
+.bar .progress-line.node span {
+  width: 75%;
+}
+.progress-line span::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after {
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+.progress-line.html span::after {
+  content: "90%";
+}
+
+.progress-line.css span::after {
+  content: "80%";
+}
+.progress-line.javascript span::after {
+  content: "90%";
+}
+.progress-line.reactjs span::after {
+  content: "85%";
+}
+.progress-line.node span::after {
+  content: "75%";
+}
+
+@media (max-width:420px) {
+  .skill-bars{
+    width:320px;
+  }
+}
+@media (max-width:280px) {
+  .skill-bars{
+    width:280px;
+  }
+}
+
+.card--inner--div{
+  background-color: rgba(255, 0, 0, 0.651)
+}
+
+::-webkit-scrollbar{
+  width:10px;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-color: #242B2E;
+}
+::-webkit-scrollbar-track{
+  background-color: rgb(24 24 27);
+}
