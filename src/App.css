@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-html {
-  scroll-behavior: smooth;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 ::selection {
   color: #fff;
@@ -193,7 +190,6 @@ html {
   background-color: rgb(24 24 27);
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  z-index: 999999999999999999999;
 }
 .skill-bars .bar {
   margin: 20px 0;
@@ -209,7 +205,7 @@ html {
   font-size: 17px;
   opacity: 0;
   animation: showText 0.5s 1s linear forwards;
-  color:#fff;
+  color: #fff;
 }
 @keyframes showText {
   100% {
@@ -259,7 +255,7 @@ html {
 }
 .progress-line span::before {
   position: absolute;
-  content: "";
+  content: '';
   top: -10px;
   right: 0;
   height: 0;
@@ -290,44 +286,44 @@ html {
   }
 }
 .progress-line.html span::after {
-  content: "90%";
+  content: '90%';
 }
 
 .progress-line.css span::after {
-  content: "80%";
+  content: '80%';
 }
 .progress-line.javascript span::after {
-  content: "90%";
+  content: '90%';
 }
 .progress-line.reactjs span::after {
-  content: "85%";
+  content: '85%';
 }
 .progress-line.node span::after {
-  content: "75%";
+  content: '75%';
 }
 
-@media (max-width:420px) {
-  .skill-bars{
-    width:320px;
+@media (max-width: 420px) {
+  .skill-bars {
+    width: 320px;
   }
 }
-@media (max-width:280px) {
-  .skill-bars{
-    width:280px;
+@media (max-width: 280px) {
+  .skill-bars {
+    width: 280px;
   }
 }
 
-.card--inner--div{
-  background-color: rgba(255, 0, 0, 0.651)
+.card--inner--div {
+  background-color: rgba(255, 0, 0, 0.651);
 }
 
-::-webkit-scrollbar{
-  width:10px;
+::-webkit-scrollbar {
+  width: 10px;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #242B2E;
+  background-color: #242b2e;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: rgb(24 24 27);
 }

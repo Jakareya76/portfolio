@@ -1,7 +1,7 @@
-import ProjectData from "./ProjectData";
-import Card from "./Card";
+import ProjectData from './ProjectData';
+import Card from './Card';
 
-const Portfolio = () => {
+const Project = () => {
   return (
     <section className="flex flex-col items-center justify-center py-20">
       <h1 className="text-2xl text-center md:text-4xl text-white font-mono">
@@ -26,4 +26,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Project;

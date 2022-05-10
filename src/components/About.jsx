@@ -1,8 +1,29 @@
-import Skills from "./Skills";
-import Button from "./Button";
-import Bar from "./Bar";
+import Button from './Button';
+import Bar from './Bar';
 
 const About = () => {
+  const Skills = [
+    {
+      name: 'HTML',
+      classNames: 'html',
+    },
+    {
+      name: 'CSS',
+      classNames: 'css',
+    },
+    {
+      name: 'JavaScript',
+      classNames: 'javascript',
+    },
+    {
+      name: 'React Js',
+      classNames: 'reactjs',
+    },
+    {
+      name: 'Node Js',
+      classNames: 'node',
+    },
+  ];
   return (
     <section
       id="about"
@@ -12,17 +33,19 @@ const About = () => {
         <h1 className="text-yellow-300 text-2xl md:text-5xl font-bold font-mono">
           About Me
         </h1>
-        <p className="text-gray-400 my-4 pb-4 text-sm">
-          Hi, I'm Jakareya, Full Stack Web Developer. With Over 3 YEARS Of
-          Experience. Since beginning my journey as a freelance Developer nearly
-          3 years ago, I've done remote work for agencies, consulted for
-          startups, and collaborated with talented people to create digital
-          products for both business and consumer use. I'm quietly confident,
-          naturally curious, and perpetually working on improving my skills
+        <p className="text-gray-400 my-4 pb-4 text-sm text-justify">
+          Hi, I'm Jakareya, Full Stack Web Developer. With Over 3
+          YEARS Of Experience. Since beginning my journey as a
+          freelance Developer nearly 3 years ago, I've done remote
+          work for agencies, consulted for startups, and collaborated
+          with talented people to create digital products for both
+          business and consumer use. I'm quietly confident, naturally
+          curious, and perpetually working on improving my skills
           <br />
-          <br />I like to code things from scratch, and enjoy bringing ideas to
-          life in the browser. I have been working on the technology like React
-          Js, Node Js, Express Js, MongoDB, And NextJs.
+          <br />I like to code things from scratch, and enjoy bringing
+          ideas to life in the browser. I have been working on the
+          technology like React Js, Node Js, Express Js, MongoDB, And
+          NextJs.
         </p>
         <Button links="https://www.fiverr.com/riiote?public_mode=true">
           HIRE ME
