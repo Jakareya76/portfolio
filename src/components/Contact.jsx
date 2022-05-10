@@ -1,24 +1,25 @@
-import { useRef } from "react";
-import emailjs from "@emailjs/browser";
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const form = useRef();
+
   const submitFrom = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_pqfl0pp",
-        "template_s7hhwu4",
+        'service_pqfl0pp',
+        'template_s7hhwu4',
         form.current,
-        "email_js_id"
+        `${process.env.REACT_APP_EMAILJS_API_key}`
       )
       .then(
         () => {
           window.location.reload();
         },
         () => {
-          alert("Failed To Send Message");
+          alert('Failed To Send Message');
         }
       );
   };
