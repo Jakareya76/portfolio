@@ -18,7 +18,7 @@ const ProjectData = [
   },
   {
     title: 'Admin Dashboard',
-    link: 'https://jakareya76.github.io/admin-dashboard',
+    link: 'https://jakareya76.github.io/admin-panel',
     image: Admin,
   },
   {
