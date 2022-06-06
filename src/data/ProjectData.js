@@ -1,6 +1,6 @@
 import todo from '../assets/project/todo.png';
 import music from '../assets/project/music.png';
-import ticTacToe from '../assets/project/tic-tac-toe.png';
+import gpt3 from '../assets/project/GPT-3.png';
 import Burger from '../assets/project/burger.png';
 import Weather from '../assets/project/weather.png';
 import Admin from '../assets/project/admin.png';
@@ -10,6 +10,11 @@ const ProjectData = [
     title: 'Burger Restaurant',
     link: 'https://jakareya76.github.io/burger-restaurant/',
     image: Burger,
+  },
+  {
+    title: 'GPT-3',
+    link: 'https://jakareya76.github.io/gpt3',
+    image: gpt3,
   },
   {
     title: 'Music Website',
@@ -25,11 +30,6 @@ const ProjectData = [
     title: 'Weather App',
     link: 'https://jakareya76.github.io/weather-app',
     image: Weather,
-  },
-  {
-    title: 'Tic Tac Toe Game',
-    link: 'https://jakareya76.github.io/tic-tac-toe-game/',
-    image: ticTacToe,
   },
   {
     title: 'Todo App',

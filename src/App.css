@@ -239,19 +239,19 @@
   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 .bar .progress-line.html span {
-  width: 90%;
+  width: 96%;
 }
 .bar .progress-line.css span {
-  width: 80%;
+  width: 85%;
 }
 .bar .progress-line.javascript span {
   width: 90%;
 }
 .bar .progress-line.reactjs span {
-  width: 85%;
+  width: 95%;
 }
 .bar .progress-line.node span {
-  width: 75%;
+  width: 85%;
 }
 .progress-line span::before {
   position: absolute;
@@ -286,20 +286,20 @@
   }
 }
 .progress-line.html span::after {
-  content: '90%';
+  content: '96%';
 }
 
 .progress-line.css span::after {
-  content: '80%';
+  content: '85%';
 }
 .progress-line.javascript span::after {
   content: '90%';
 }
 .progress-line.reactjs span::after {
-  content: '85%';
+  content: '95%';
 }
 .progress-line.node span::after {
-  content: '75%';
+  content: '85%';
 }
 
 @media (max-width: 420px) {

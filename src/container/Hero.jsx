@@ -1,6 +1,6 @@
 import { Link } from 'react-scroll';
-import CubeSpinner from './CubeSpinner';
-import Button from './Button';
+import CubeSpinner from '../components/CubeSpinner';
+import Button from '../components/Button';
 
 const Hero = () => {
   return (

@@ -11,7 +11,7 @@ import Logo from '../assets/logo.png';
 const Sidebar = () => {
   return (
     <>
-      <header className="bg-zinc-800 md:w-16 md:h-full fixed md:top-0 md:left-0 bottom-0 z-50 md:min-h-full flex md:flex-col items-center justify-around w-full h-20">
+      <nav className="bg-zinc-800 md:w-16 md:h-full fixed md:top-0 md:left-0 bottom-0 z-50 md:min-h-full flex md:flex-col items-center justify-around w-full h-20">
         <Link
           to="hero"
           smooth={true}
@@ -64,7 +64,7 @@ const Sidebar = () => {
             <Twitter className="bg-gray-700 m-3 text-2xl rounded-md cursor-pointer hover:bg-yellow-400 hover:text-gray-800 text-gray-500" />
           </a>
         </div>
-      </header>
+      </nav>
     </>
   );
 };

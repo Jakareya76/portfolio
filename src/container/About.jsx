@@ -1,29 +1,8 @@
-import Button from './Button';
-import Bar from './Bar';
+import Button from '../components/Button';
+import Bar from '../components/Bar';
+import Skills from '../data/Skills';
 
 const About = () => {
-  const Skills = [
-    {
-      name: 'HTML',
-      classNames: 'html',
-    },
-    {
-      name: 'CSS',
-      classNames: 'css',
-    },
-    {
-      name: 'JavaScript',
-      classNames: 'javascript',
-    },
-    {
-      name: 'React Js',
-      classNames: 'reactjs',
-    },
-    {
-      name: 'Node Js',
-      classNames: 'node',
-    },
-  ];
   return (
     <section
       id="about"
