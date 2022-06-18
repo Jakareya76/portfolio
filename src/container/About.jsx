@@ -30,7 +30,6 @@ const About = () => {
           HIRE ME
         </Button>
       </div>
-
       <div className="flex items-center justify-center">
         <div className="skill-bars">
           <h1 className="text-white font-bold text-2xl">My Skills</h1>
