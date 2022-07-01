@@ -1,8 +1,23 @@
-import Button from '../components/Button';
-import Bar from '../components/Bar';
-import Skills from '../data/Skills';
+import { useEffect, useRef, useState } from "react";
+import Button from "../components/Button";
+import Bar from "../components/Bar";
+import Skills from "../data/Skills";
 
 const About = () => {
+  const [isBarVisible, setIsBarVisible] = useState();
+
+  const barRef = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      console.log(entry);
+      setIsBarVisible(entry.isIntersecting);
+    });
+
+    observer.observe(barRef.current);
+  }, []);
+
   return (
     <section
       id="about"
@@ -13,24 +28,22 @@ const About = () => {
           About Me
         </h1>
         <p className="text-gray-400 my-4 pb-4 text-sm text-justify">
-          Hi, I'm Jakareya, Full Stack Web Developer. With Over 3
-          YEARS Of Experience. Since beginning my journey as a
-          freelance Developer nearly 3 years ago, I've done remote
-          work for agencies, consulted for startups, and collaborated
-          with talented people to create digital products for both
-          business and consumer use. I'm quietly confident, naturally
-          curious, and perpetually working on improving my skills
+          Hi, I'm Jakareya, Full Stack Web Developer. With Over 3 YEARS Of
+          Experience. Since beginning my journey as a freelance Developer nearly
+          3 years ago, I've done remote work for agencies, consulted for
+          startups, and collaborated with talented people to create digital
+          products for both business and consumer use. I'm quietly confident,
+          naturally curious, and perpetually working on improving my skills
           <br />
-          <br />I like to code things from scratch, and enjoy bringing
-          ideas to life in the browser. I have been working on the
-          technology like React Js, Node Js, Express Js, MongoDB, And
-          NextJs.
+          <br />I like to code things from scratch, and enjoy bringing ideas to
+          life in the browser. I have been working on the technology like React
+          Js, Node Js, Express Js, MongoDB, And NextJs.
         </p>
         <Button links="https://www.fiverr.com/riiote?public_mode=true">
           HIRE ME
         </Button>
       </div>
-      <div className="flex items-center justify-center">
+      <div ref={barRef} className="flex items-center justify-center">
         <div className="skill-bars">
           <h1 className="text-white font-bold text-2xl">My Skills</h1>
           {Skills.map((curElem, index) => {
@@ -39,6 +52,7 @@ const About = () => {
                 key={index}
                 name={curElem.name}
                 classNames={curElem.classNames}
+                isBarVisible={isBarVisible}
               />
             );
           })}
