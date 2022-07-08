@@ -1,6 +1,5 @@
-import { Link } from 'react-scroll';
-import CubeSpinner from '../components/CubeSpinner';
-import Button from '../components/Button';
+import { Link } from "react-scroll";
+import CubeSpinner from "../CubeSpinner";
 
 const Hero = () => {
   return (
@@ -8,24 +7,24 @@ const Hero = () => {
       className="md:grid md:grid-cols-2 place-items-center grid grid-cols-1 justify-items-center items-center h-screen pt-16 pb-20"
       id="hero"
     >
-      <div className="md:ml-6 md:text-left text-center">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl fadeIn text-white font-bold font-mono">
-          Hi, <br /> I'm{' '}
-          <span className="lg:text-6xl text-yellow-400 font-sans">
+      <div className="ml-[10%]">
+        <h1 className="text-3xl text-white font-bold font-Arimo sm:text-4xl md:text-[40px] lg:text-5xl xl:text-7xl ">
+          Hi, <br /> I'm{" "}
+          <span className=" text-yellow-400 font-sans lg:text-6xl xl:text-7xl">
             J
           </span>
           akareya
           <br />
           Web Developer.
         </h1>
-        <h2 className="text-gray-500 my-2 font-sans text-sm mb-6 tracking-widest">
+        <h2 className="text-[#8d8d8d] my-2 font-Arimo text-sm mb-6 tracking-[3px]">
           Full Stack Developer / JavaScript Expert / Freelancer
         </h2>
-        <Button>
+        <button className="border text-[#ffd700] border-[#ffd700] py-2 px-10 duration-200 hover:bg-[#ffd700] hover:text-[#333]">
           <Link to="contact" smooth={true} spy={true}>
             CONTACT ME
           </Link>
-        </Button>
+        </button>
       </div>
       <div className="w-2/4 -mt-40 lg:-mt-80 flex-1">
         <CubeSpinner />

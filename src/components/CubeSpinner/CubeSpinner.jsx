@@ -1,9 +1,10 @@
-import { ReactComponent as Html } from "../assets/html.svg";
-import { ReactComponent as Css } from "../assets/css-3.svg";
-import { ReactComponent as Javascript } from "../assets/javascript.svg";
-import { ReactComponent as React } from "../assets/react.svg";
-import { ReactComponent as Node } from "../assets/node-js.svg";
-import { ReactComponent as Tailwind } from "../assets/tailwind.svg";
+import { ReactComponent as Html } from "../../assets/svg/html.svg";
+import { ReactComponent as Css } from "../../assets/svg/css-3.svg";
+import { ReactComponent as Javascript } from "../../assets/svg/javascript.svg";
+import { ReactComponent as React } from "../../assets/svg/react.svg";
+import { ReactComponent as Node } from "../../assets/svg/node-js.svg";
+import { ReactComponent as Tailwind } from "../../assets/svg/tailwind.svg";
+import "./CubeSpinner.css";
 
 const CubeSpinner = () => {
   return (

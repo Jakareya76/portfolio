@@ -1,5 +1,5 @@
-import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const form = useRef();
@@ -9,8 +9,8 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'service_pqfl0pp',
-        'template_s7hhwu4',
+        "service_pqfl0pp",
+        "template_s7hhwu4",
         form.current,
         `${process.env.REACT_APP_EMAILJS_API_key}`
       )
@@ -19,7 +19,7 @@ const Contact = () => {
           window.location.reload();
         },
         () => {
-          alert('Failed To Send Message');
+          alert("Failed To Send Message");
         }
       );
   };
@@ -39,20 +39,20 @@ const Contact = () => {
               type="text"
               placeholder="Name"
               name="user_name"
-              className="py-2 px-10 md:my-3 focus:outline-none rounded-lg mb-2 bg-slate-100"
+              className="py-3 px-[20px] md:my-3 focus:outline-none text-[#8d8d8d] placeholder:text-[#8d8d8d] mb-2 bg-[#2b2b2b]"
               required
             />
             <input
               type="email"
               placeholder="Email"
               name="user_email"
-              className="py-2 px-10 md:my-3 focus:outline-none rounded-lg bg-slate-100"
+              className="py-3 px-[20px] md:my-3 focus:outline-none text-[#8d8d8d] placeholder:text-[#8d8d8d] bg-[#2b2b2b]"
               required
             />
           </div>
           <div className="w-full">
             <textarea
-              className="focus:outline-none rounded-lg p-4 w-full h-48 bg-slate-100"
+              className="focus:outline-none px-[20px] text-[#8d8d8d] placeholder:text-[#8d8d8d] p-4 w-full h-48 bg-[#2b2b2b]"
               name="message"
               id=""
               placeholder="Messege"
@@ -62,8 +62,8 @@ const Contact = () => {
           <div className="my-6 grid md:place-items-end w-full">
             <input
               type="submit"
-              value="Send"
-              className="bg-yellow-400 text-gray-700 font-semibold py-2 px-12 text-xl rounded-md cursor-pointer hover:bg-blue-400 hover:text-white duration-300"
+              value="Send message!"
+              className="text-[#ffd700] border border-[#ffd700] h-[50px] w-[220px] tracking-[4px] cursor-pointer hover:bg-[#ffd700] hover:text-black duration-200"
             />
           </div>
         </form>
