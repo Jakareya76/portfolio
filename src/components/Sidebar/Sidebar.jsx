@@ -86,17 +86,33 @@ const Sidebar = () => {
           </Link>
         </nav>
         <div className="hidden md:block md:space-x-0">
-          <a href="https://www.linkedin.com/in/md-jakareya-ahmed-43a5251b1">
+          <a
+            href="https://www.linkedin.com/in/md-jakareya-ahmed-43a5251b1"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Linkdin className="text-[#4d4d4e] m-3 text-2xl cursor-pointer hover:bg-[#4d4d4e] hover:text-gray-800" />
           </a>
 
-          <a href="https://www.github.com/Jakareya76">
+          <a
+            href="https://www.github.com/Jakareya76"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Github className="text-[#4d4d4e] m-3 text-2xl cursor-pointer hover:bg-[#4d4d4e] hover:text-gray-800" />
           </a>
-          <a href="https://www.facebook.com/profile.php?id=100077470063570">
+          <a
+            href="https://www.facebook.com/profile.php?id=100077470063570"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Facebook className="text-[#4d4d4e] m-3 text-2xl cursor-pointer hover:bg-[#4d4d4e] hover:text-gray-800" />
           </a>
-          <a href="/">
+          <a
+            href="https://twitter.com/mdjakareya6"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Twitter className="text-[#4d4d4e] m-3 text-2xl cursor-pointer hover:bg-[#4d4d4e] hover:text-gray-800" />
           </a>
         </div>
