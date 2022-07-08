@@ -9,7 +9,7 @@ const Card = ({ name, img, url }) => {
       <div className="absolute w-full h-full card--inner--div top-0 opacity-0 hover:opacity-100 rounded-sm duration-500 flex items-center justify-center flex-col">
         <h1 className="text-white font-semibold text-xl">{name}</h1>
         <a
-          className="border text-white py-1 px-6 mt-4 hover:bg-[#ffd900a2] hover:text-black hover:border-transparent uppercase duration-200"
+          className="border text-white py-1 px-6 mt-4 hover:bg-[#20252cd7] hover:border-transparent uppercase duration-200"
           href={url}
           target="_blank"
           rel="noreferrer"
