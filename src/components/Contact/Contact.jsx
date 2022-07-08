@@ -62,7 +62,7 @@ const Contact = () => {
               required
             ></textarea>
           </div>
-          <div className="my-6 grid md:place-items-end w-full">
+          <div className="w-full my-6 grid place-items-center md:place-items-end">
             <input
               type="submit"
               value="Send message!"

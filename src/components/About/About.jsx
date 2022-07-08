@@ -12,9 +12,9 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-32 grid lg:grid-cols-2 xl:place-items-center items-center"
+      className="grid grid-cols-1 py-32 lg:grid-cols-2 place-items-center items-center"
     >
-      <div className="sm:ml-16 px-4 text-center sm:text-left lg:w-3/4 mb-6">
+      <div className=" px-4 mb-6 text-center sm:text-left xl:w-3/4 sm:ml-16 ">
         <h1 className="text-yellow-300 text-2xl md:text-5xl font-bold font-mono">
           About Me
         </h1>
@@ -40,7 +40,12 @@ const About = () => {
         </a>
       </div>
       <div id="canvaContainer">
-        <canvas id="myCanva" width="500px" height="500px">
+        <canvas
+          id="myCanva"
+          width="500px"
+          height="500px"
+          className="w-[280px] h-[280px] xl:w-[450px] xl:h-[450px] lg:w-[350px] lg:h-[350px] md:w-[300px] md:h-[300px]"
+        >
           <ul id="tagList">
             <li>
               <a href="https://google.com" className="text-sm">
@@ -84,11 +89,6 @@ const About = () => {
             </li>
             <li>
               <a href="https://google.com" className="text-sm">
-                ES6
-              </a>
-            </li>
-            <li>
-              <a href="https://google.com" className="text-sm">
                 Tailwind CSS
               </a>
             </li>
@@ -112,11 +112,7 @@ const About = () => {
                 Redux
               </a>
             </li>
-            <li>
-              <a href="https://google.com" className="text-sm">
-                Webpack
-              </a>
-            </li>
+
             <li>
               <a href="https://google.com" className="text-sm">
                 SCSS
@@ -134,17 +130,12 @@ const About = () => {
             </li>
             <li>
               <a href="https://google.com" className="text-sm">
-                MERN Stack
-              </a>
-            </li>
-            <li>
-              <a href="https://google.com" className="text-sm">
                 NPM
               </a>
             </li>
             <li>
               <a href="https://google.com" className="text-sm">
-                YARN
+                MERN Stack
               </a>
             </li>
           </ul>
