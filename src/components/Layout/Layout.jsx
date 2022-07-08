@@ -1,3 +1,5 @@
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Hero from "../Hero";
 import About from "../About";
 import Project from "../Project";
@@ -10,6 +12,7 @@ const Layout = () => {
       <About />
       <Project />
       <Contact />
+      <ToastContainer />
     </main>
   );
 };

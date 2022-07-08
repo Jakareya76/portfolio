@@ -1,8 +1,9 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 const Contact = () => {
-  const form = useRef();
+  const formRef = useRef();
 
   const submitFrom = (e) => {
     e.preventDefault();
@@ -11,15 +12,17 @@ const Contact = () => {
       .sendForm(
         "service_pqfl0pp",
         "template_s7hhwu4",
-        form.current,
-        `${process.env.REACT_APP_EMAILJS_API_key}`
+        formRef.current,
+        `${process.env.REACT_APP_EMAILJS_API_KEY}`
       )
       .then(
         () => {
-          window.location.reload();
+          formRef.current.reset();
+          toast.success("Message was send successfully!");
         },
         () => {
-          alert("Failed To Send Message");
+          formRef.current.reset();
+          toast.error("Faild to send message!");
         }
       );
   };
@@ -33,7 +36,7 @@ const Contact = () => {
         <span className="text-yellow-400">Contact</span> Me
       </h1>
       <div className="grid grid-row-3 place-items-center gap-2 md:gap-0">
-        <form ref={form} onSubmit={submitFrom}>
+        <form ref={formRef} onSubmit={submitFrom}>
           <div className="flex flex-col md:flex-row w-full md:space-x-2 space-x-0 md:mb-0 mb-2">
             <input
               type="text"
