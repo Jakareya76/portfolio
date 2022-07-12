@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="ml-[10%]">
         <h1 className="text-3xl text-white font-bold font-Arimo sm:text-4xl md:text-[40px] lg:text-5xl xl:text-7xl ">
           Hi, <br /> I'm{" "}
-          <span className=" text-yellow-400 font-sans lg:text-6xl xl:text-7xl">
+          <span className="text-yellow-400 font-sans lg:text-6xl xl:text-7xl">
             J
           </span>
           akareya
