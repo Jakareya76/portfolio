@@ -18,7 +18,7 @@
   align-items: center;
   background: #242b2eea;
   border: 1px solid #ccc;
-  box-shadow: 0 0 20px 0 #ffffe096;
+  box-shadow: 0 0 20px 0 #ffffe03d;
   display: flex;
   font-size: 150px;
   height: 300px;
@@ -129,9 +129,9 @@
   }
   .cubespinner div {
     align-items: center;
-    background: #242b2e;
+    background: #242b2eea;
     border: 1px solid #ccc;
-    box-shadow: 0 0 20px 0 #e0feff75;
+    box-shadow: 0 0 20px 0 #ffffe03d;
     display: flex;
     font-size: 150px;
     height: 200px;
